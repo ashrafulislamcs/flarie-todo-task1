@@ -86,4 +86,8 @@ spec:
           nodePort: 30567
 		  
 Although the requirement of the task was mentioned to use NodePort service 34567
+<<<<<<< HEAD
 but the Kubernetes NodePort range is 30000-32767 so I'm using 30567 instead of 34567.
+=======
+but the Kubernetes NodePort range is 30000-32767 so I'm using 30567 instead of 34567.
+>>>>>>> origin
