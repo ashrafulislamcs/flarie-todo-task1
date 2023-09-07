@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: task-1
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            component: task-1
+    template:
+        metadata:
+            labels:
+                component: task-1
+        spec:
+            containers:
+                - name: flarie-todo
+                  image: ashrafulcse/flarie:latest
+                  ports:
+                    - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: tasks-1-service
+spec:
+    type: NodePort
+    selector:
+        component: tasks-1
+    ports:
+        - port: 80
+          targetPort: 80
+          nodePort: 30567
