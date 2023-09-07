@@ -1,4 +1,3 @@
-First of All, I have forked this repository https://github.com/mistryflarie/flarie-todo to my own account and keep it public https://github.com/ashrafulislamcs/flarie-todo-task1
 
 Step1: Clone this repo https://github.com/ashrafulislamcs/flarie-todo-task1 and try to run this application manually
 but I'm getting an error whenever I try to up the application manually, to check the error I found the exact cause 
@@ -86,8 +85,6 @@ spec:
           nodePort: 30567
 		  
 Although the requirement of the task was mentioned to use NodePort service 34567
-<<<<<<< HEAD
 but the Kubernetes NodePort range is 30000-32767 so I'm using 30567 instead of 34567.
-=======
 but the Kubernetes NodePort range is 30000-32767 so I'm using 30567 instead of 34567.
->>>>>>> origin
+
